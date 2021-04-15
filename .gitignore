@@ -7,9 +7,6 @@
 # Editor-based HTTP Client requests
 /httpRequests/
 
-/.idea/chromedriver.iml
-/.idea/misc.xml
-/.idea/modules.xml
-/.idea/vcs.xml
+.idea
 
 
