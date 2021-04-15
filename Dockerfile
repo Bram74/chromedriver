@@ -20,7 +20,7 @@ RUN export DEBIAN_FRONTEND=noninteractive \
   # Patch Chrome launch script and append CHROMIUM_FLAGS to the last line:
   && sed -i '${s/$/'" $CHROMIUM_FLAGS"'/}' /opt/google/chrome/google-chrome \
   && BASE_URL=https://chromedriver.storage.googleapis.com \
-  && VERSION=$(curl -sL "$BASE_URL/89.0.4389.23") \
+  && VERSION=$(curl -sL "$BASE_URL/LATEST_RELEASE") \
   && curl -sL "$BASE_URL/$VERSION/chromedriver_linux64.zip" -o /tmp/driver.zip \
   && unzip /tmp/driver.zip \
   && chmod 755 chromedriver \
