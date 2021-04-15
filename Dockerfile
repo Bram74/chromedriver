@@ -2,7 +2,7 @@
 # Chromedriver Dockerfile
 #
 
-FROM bram2019/basedriver
+FROM blueimp/basedriver
 
 # Install the latest versions of Google Chrome and Chromedriver:
 RUN export DEBIAN_FRONTEND=noninteractive \
